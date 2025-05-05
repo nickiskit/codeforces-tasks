@@ -35,7 +35,7 @@ function isItPossibleToDeleteMin(arr, length) {
 
     return true;
 }
-15
+
 for (let test = 0; test < testsNumbers; test++) {
     const arrLength = Number(input[currentLine]);
     const numsArr = input[currentLine + 1].split(' ').map(Number).sort((a, b) => a - b);
