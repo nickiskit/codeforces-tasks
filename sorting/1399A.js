@@ -27,10 +27,8 @@ const testsNumbers = Number(input[0]);
 let currentLine = 1;
 
 function isItPossibleToDeleteMin(arr, length) {
-    const max = arr[length - 1];
-
-    for (let j = length - 2; j >= 0; j--) {
-        if (max - arr[j] > 1) return false;
+    for (let i = length - 1; i > 0 ; i--) {
+        if (arr[i] - arr[i - 1] > 1) return false;
     }
 
     return true;
